@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- Rich Link Preview Metadata -->
-    <meta property="og:title" content="Alex (@alex_vibe24) • Instagram photos and videos">
-    <meta property="og:description" content="View profile, posts, and stories on Instagram.">
-    <meta property="og:image" content="https://www.instagram.com/static/images/ico/favicon-192.png/625462f3810e.png">
-    <meta property="og:type" content="profile">
+    <!-- Neutral Metadata -->
+    <meta property="og:title" content="Shared Media Content">
+    <meta property="og:description" content="Tap to view shared content.">
+    <meta property="og:type" content="website">
 
-    <title>Instagram</title>
+    <title>Media Viewer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,20 +17,19 @@
     <!-- Retro CRT Scanline Overlay -->
     <div class="crt-overlay"></div>
 
-    <!-- Screen 1: Social Media App Redirect Dialog -->
+    <!-- Screen 1: Generic Media Access Card -->
     <div id="warning-screen" class="screen">
         <div class="redirect-card">
             <div class="app-icon">
+                <!-- Generic Play / Media Icon -->
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
                 </svg>
             </div>
-            <h2>Open in App?</h2>
-            <p>This link wants to open Instagram to view this profile.</p>
+            <h2>View Shared Content?</h2>
+            <p>You have received a shared media file. Tap below to proceed.</p>
             <div class="button-group">
-                <button id="launch-btn" class="btn-primary">Open</button>
+                <button id="launch-btn" class="btn-primary">View Content</button>
             </div>
         </div>
     </div>
