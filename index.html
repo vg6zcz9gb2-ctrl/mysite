@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Rich Link Preview Metadata -->
+    <meta property="og:title" content="Alex (@alex_vibe24) • Instagram photos and videos">
+    <meta property="og:description" content="View profile, posts, and stories on Instagram.">
+    <meta property="og:image" content="https://www.instagram.com/static/images/ico/favicon-192.png/625462f3810e.png">
+    <meta property="og:type" content="profile">
+
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Retro CRT Scanline Overlay -->
+    <div class="crt-overlay"></div>
+
+    <!-- Screen 1: Social Media App Redirect Dialog -->
+    <div id="warning-screen" class="screen">
+        <div class="redirect-card">
+            <div class="app-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </div>
+            <h2>Open in App?</h2>
+            <p>This link wants to open Instagram to view this profile.</p>
+            <div class="button-group">
+                <button id="launch-btn" class="btn-primary">Open</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 2: Data Terminal -->
+    <div id="data-screen" class="screen hidden">
+        <div class="rec-indicator">● REC</div>
+        <div class="terminal-container">
+            <div class="terminal-header">*** UNUSUAL ACTIVITY DETECTED ***</div>
+            <pre id="typewriter-text"></pre><span class="cursor">_</span>
+        </div>
+    </div>
+
+    <!-- Screen 3: The Jump Scare -->
+    <div id="scare-screen" class="screen hidden">
+        <img src="IMG_4928.jpg" alt="BOO!" id="scary-img">
+    </div>
+
+    <!-- Horror Audio File -->
+    <audio id="scream-audio" src="freesound_community-jumpscare-68730.mp3" preload="auto" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
